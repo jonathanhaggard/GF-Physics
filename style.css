@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: 'radio_groteskregular';
+    src: url('fonts/radiogrotesk-regular-webfont.woff2') format('woff2'),
+         url('fonts/radiogrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.matter-header-outer{
+  display: none;
+}
+canvas{
+  border-radius: 0;
+  max-width: none;
+  max-height: none;
+  width: 50%;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'radio_groteskregular', sans-serif;
+  font-size: 30px;
+}
+
+.matter-js-compare-build {
+  position: absolute;
+  background: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.matter-js-compare-build .matter-header-outer {
+  display: none;
+}
+
+.matter-js-compare-build canvas {
+  opacity: 0.5;
+  background: transparent !important;
+}
